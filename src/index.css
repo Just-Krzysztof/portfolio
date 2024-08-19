@@ -1,4 +1,47 @@
+@import url("./assets//fonts/fonts.css");
 :root {
+  color-scheme: light dark;
+  color: var(--white-color);
+  background-color: var(--background-color);
+  font-family: "Roboto", system-ui, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color:#242424;
+  --bacground-side-color:#343434;
+  --bacground-border-color:#424242;
+  --hover-color:#8f44fd;
+  --secondary-hover-color:#7f3be4;
+  --white-color:rgba(255, 255, 255, 0.87);
+
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+@media (max-width: 780px) {
+  body {
+    font-size: 14px;
+    /* color: yellow; */
+  }
+}
+a {
+  font-weight: 500;
+  color: var(--hover-color);
+  text-decoration: inherit;
+}
+a:hover {
+   color: var(--hover-color);
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -12,6 +55,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 a {
   font-weight: 500;
@@ -65,4 +109,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
