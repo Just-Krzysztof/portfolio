@@ -58,7 +58,8 @@ img {
   transition: height 0.3s ease, opacity 0.6s ease;
 }
 .information-box.visible {
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   opacity: 1;
 }
  .longEmail {
@@ -156,6 +157,7 @@ div {
   }
 
   .information-box ul li {
+    height: 3rem;
     align-items: center;
   }
 }
