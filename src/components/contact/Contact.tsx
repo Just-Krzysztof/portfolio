@@ -57,11 +57,11 @@ const Contact = () => {
         <div className="mapContainer">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d355053.9750519518!2d18.634016000000003!3d54.523455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda145071ed789%3A0xdee2f99989236636!2sGdynia!5e1!3m2!1spl!2spl!4v1723487122216!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148196.84777259236!2d18.46921283788994!3d54.52334312947387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda145071ed789%3A0xdee2f99989236636!2sGdynia!5e0!3m2!1spl!2spl!4v1724134264694!5m2!1spl!2spl"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="mapContainerFrame"
-          ></iframe>
+            ></iframe>
         </div>
       </div>
       <div>
