@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { changeLanguage } from "i18next";
 import avatar from "../../assets/Developer.png";
 import "./Sidebar.css";
 
@@ -29,13 +31,36 @@ const Sidebar: React.FC = () => {
       if (!isHidden) {
         infoBoxRef.current.style.height = `${infoBoxRef.current.scrollHeight}px`;
       } else {
-        infoBoxRef.current.style.height = '0';
+        infoBoxRef.current.style.height = "0";
       }
     }
   }, [isHidden]);
 
+   const { i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      changeLanguage(savedLanguage);
+    }
+  }, []);
+
+  const handleLanguageChange = (lang: string) => {
+    changeLanguage(lang);
+    localStorage.setItem("language", lang);
+    console.log(localStorage.getItem("language"));
+  };
+
   return (
     <div className="sidebar">
+        <button
+          className="language-switcher"
+          onClick={() =>
+            handleLanguageChange(i18n.language === "en" ? "pl" : "en")
+          }
+        >
+          {i18n.language === "en" ? "Polish" : "English"}
+        </button>
       <div className="profile">
         <div className="profileHeader">
           <img src={avatar} alt="Profile" className="avatar" />
@@ -45,7 +70,10 @@ const Sidebar: React.FC = () => {
           </div>
         </div>
 
-        <div ref={infoBoxRef} className={`information-box ${!isHidden ? "visible" : ""}`}>
+        <div
+          ref={infoBoxRef}
+          className={`information-box ${!isHidden ? "visible" : ""}`}
+        >
           <ul>
             <li>
               <div className="iconBox">

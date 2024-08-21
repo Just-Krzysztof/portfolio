@@ -62,10 +62,10 @@ img {
   height: 100%;
   opacity: 1;
 }
- .longEmail {
-   white-space: normal;
-   overflow-wrap: break-word;
- }
+.longEmail {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
 div {
   font-size: 1rem;
 }
@@ -110,24 +110,28 @@ div {
   border-radius: 10px;
   cursor: pointer;
 }
-
 @media (max-width: 1200px) {
   .profileHeader {
     flex-direction: row;
     gap: 2rem;
   }
+
   .information-box > ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .information-box > ul > li {
     width: 48%;
+    height: 3.5rem;
   }
+
   .buttonContainer {
     width: 100%;
     display: block;
   }
+
   .show-more-button {
     display: block;
     margin: 0 auto;
@@ -156,8 +160,13 @@ div {
     word-break: break-word;
   }
 
-  .information-box ul li {
-    height: 3rem;
+  .information-box > ul > li {
     align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .information-box > ul > li {
+    width: 100%;
   }
 }

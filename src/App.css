@@ -8,12 +8,27 @@
 }
 
 .sidebar {
+  position: relative;
   flex: 1;
   padding: 25px;
   border: 2px solid var(--bacground-border-color);
   border-radius: 25px;
   height: 100%;
   background-color: var(--bacground-side-color);
+}
+
+.language-switcher {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid red;
+  border-radius: 0 25px 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .content {
@@ -36,7 +51,6 @@
 .content nav ul {
   display: flex;
   justify-content: center;
-  gap: 0.7rem;
   font-size: 1.2rem;
   list-style-type: none;
   margin: 0;
@@ -68,7 +82,7 @@ li.active {
 /* Navigation for mobile */
 
 /* Sidebar animations */
-.information-box {
+/* .information-box {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -76,12 +90,12 @@ li.active {
   opacity: 0;
   overflow: hidden;
   transition: height 0.3s ease, opacity 0.3s ease;
-}
+} */
 
-.information-box.visible {
+/* .information-box.visible {
   height: auto;
   opacity: 1;
-}
+} */
 
 .buttonContainer {
   display: none;
@@ -134,17 +148,10 @@ li.active {
     flex-direction: row;
     gap: 2rem;
   }
-
-  .information-box > ul {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+  .language-switcher {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
   }
-
-  .information-box > ul > li {
-    width: 48%;
-  }
-
   .buttonContainer {
     width: 100%;
     display: block;
