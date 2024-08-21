@@ -46,6 +46,7 @@
   margin-right: -25px;
   margin-top: -25px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .content nav ul {
@@ -118,6 +119,7 @@ li.active {
     font-size: 1rem;
     width: 100%;
     background-color: var(--bacground-border-color);
+    z-index: 1;
   }
 
   .content nav ul {
