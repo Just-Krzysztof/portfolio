@@ -4,27 +4,33 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--hover-color);
 }
-.aboutMePage{
+
+.aboutMePage {
   display: flex;
   gap: 40px;
   flex-direction: column;
 }
+
 .aboutMeParagraph {
   font-size: 1.15rem;
   line-height: 1.4;
 }
+
 h3 span {
   width: fit-content;
   padding-bottom: 0.5rem;
 }
+
 ul > li::marker {
   color: #8f44fd;
 }
+
 .mapContainer {
   width: 100%;
   height: 500px;
   border-radius: 25px;
 }
+
 .mapContainerFrame {
   width: 100%;
   height: 100%;
@@ -47,6 +53,15 @@ ul > li::marker {
 .carousel-item {
   box-sizing: border-box;
 }
+
+.active {
+  color: var(--hover-color);
+}
+
+.content nav ul li.active i {
+  color: var(--hover-color) !important;
+}
+
 .carousel-item img {
   height: 6cap;
 }

@@ -7,8 +7,7 @@ import javascript from "../../src/assets/images/Languages/javascript.svg";
 import react from "../../src/assets/images/Languages/react.png";
 import typescript from "../../src/assets/images/Languages/typescript.png";
 import vue from "../../src/assets/images/Languages/vue.png";
-import nuxt from "../../src/assets/images/Languages/Logo_Nuxt_Black_(2023).svg.png";
-// import tailwind from "../../src/assets/images/Languages/tailwind.svg";
+import nuxt from "../../src/assets/images/Languages/nuxt.png";
 import sass from "../../src/assets/images/Languages/sass.png";
 import vite from "../../src/assets/images/Languages/vite.svg";
 import python from "../../src/assets/images/Languages/python.png";
@@ -29,7 +28,6 @@ const About: React.FC = () => {
     { src: react, alt: "React" },
     { src: python, alt: "Python" },
     { src: django, alt: "DJango" },
-    // { src: tailwind, alt: "Tailwind" },
   ];
 
   return (
