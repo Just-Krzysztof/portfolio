@@ -60,10 +60,10 @@ To configure EmailJS for sending messages from the contact form, follow these st
 
    ```typescript
    const result = await emailjs.send(
-     'service_zk4rsup', // Service ID
-     'template_4fvz74d', // Template ID
+     'Service ID', 
+     'Template ID',
      formData,
-     '24ssIENU5jsaSVmKu' // User ID
+     'User ID' 
    );
 
 ## Multilingual Support
