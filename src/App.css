@@ -37,6 +37,7 @@
   border-radius: 25px;
   background-color: var(--bacground-side-color);
   padding: 25px;
+  width: 50%;
 }
 
 /* Navigation styling */
@@ -109,6 +110,37 @@ li.active {
   box-shadow: 0px 0px 10px 1px var(--hover-color);
   border-radius: 10px;
 }
+
+@media (max-width: 1200px) {
+  .profileHeader {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .language-switcher {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .buttonContainer {
+    width: 100%;
+    display: block;
+  }
+
+  .show-more-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 710px) {
   .content nav {
     display: flex;
@@ -140,37 +172,12 @@ li.active {
   .content nav ul li i {
     font-size: 1.5rem;
   }
+
   .content nav ul li span {
     display: none;
   }
-}
 
-@media (max-width: 1200px) {
-  .profileHeader {
-    flex-direction: row;
-    gap: 2rem;
-  }
-  .language-switcher {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-  }
-  .buttonContainer {
-    width: 100%;
-    display: block;
-  }
-
-  .show-more-button {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .app {
-    flex-direction: column;
-  }
-
-  .sidebar,
   .content {
-    width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
 }

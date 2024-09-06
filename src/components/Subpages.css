@@ -4,6 +4,11 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--hover-color);
 }
+.aboutMePage{
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
 .aboutMeParagraph {
   font-size: 1.15rem;
   line-height: 1.4;
@@ -27,4 +32,31 @@ ul > li::marker {
   border-radius: 25px;
 }
 
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
 
+.carousel-track {
+  display: flex;
+  gap: 25px;
+  animation: slide 12s linear infinite;
+}
+
+.carousel-item {
+  box-sizing: border-box;
+}
+.carousel-item img {
+  height: 6cap;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
