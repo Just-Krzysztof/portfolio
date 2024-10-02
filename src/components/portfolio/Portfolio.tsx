@@ -1,12 +1,18 @@
 import React from "react";
 import "./Portfolio.css";
 import calendar from "../../assets/images/calendar.png";
+import rickAndMorty from "../../assets/images/rickAndMorty.png";
 const Portfolio: React.FC = () => {
   const projects = [
     {
       title: "Calendar App",
       image: calendar,
       url: "https://just-krzysztof.github.io/calendar/",
+    },
+    {
+      title: "Rick and Morty",
+      image: rickAndMorty,
+      url: "https://just-krzysztof.github.io/rick-and-morty/",
     },
     {
       title: "Coming Soon",
