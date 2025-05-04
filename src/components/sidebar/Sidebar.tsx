@@ -66,7 +66,7 @@ const Sidebar: React.FC = () => {
           <img src={avatar} alt="Profile" className="avatar" />
           <div className="profileHeaderName">
             <h2>Krzysztof Just</h2>
-            <span className="info-button">Front-end Developer</span>
+            <span className="info-button">Full-Stack Developer</span>
           </div>
         </div>
 
