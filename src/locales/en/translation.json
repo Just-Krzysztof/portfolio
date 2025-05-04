@@ -75,5 +75,19 @@
     "send": "Send",
     "sending":"Sending...",
     "success": "Message sent Success!"
+  },
+  "sheldon": {
+    "title": "Full Stack Developer",
+    "company": "Sheldon AI",
+    "location": "Self-employed",
+    "date": "January 2025 – May 2025 · 5 months",
+    "description": "Development of a Shopify RAG Agent application with a dashboard and chat, supporting order management and accelerating the work of the support team. The application was built using Nest.js, React.js, and Shopify technologies."
+  },
+  "beforeYouRent": {
+    "title": "BeforeYouRent.pl",
+    "company": "BeforeYouRent.pl",
+    "location": "",
+    "date": "12.2024 – 01.2025",
+    "description": "BeforeYouRent.pl is an innovative web application developed with Next.js technology. The platform enables tenants to share authentic reviews and experiences about rented apartments. Users can rate various aspects of their living conditions, evaluate interactions with property owners, and access reliable information to help them make well-informed rental decisions."
   }
 }

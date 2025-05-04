@@ -7,6 +7,30 @@ const Resume: React.FC = () => {
   return (
     <div>
       <h2 className="title">Resume</h2>
+      {/* sheldon */}
+      <h3>
+        <span>{t("sheldon.title")}</span>
+      </h3>
+      <p>{t("sheldon.company")}, {t("sheldon.location")}</p>
+      <p>
+        {t("sheldon.date")}
+      </p>
+      <ul>
+        <li>{t("sheldon.description")}</li>
+      </ul>
+      {/* koniec */}
+      {/* Before you rent */}
+      <h3>
+        <span>{t("beforeYouRent.title")}</span>
+      </h3>
+      <p>{t("beforeYouRent.company")}, {t("beforeYouRent.location")}</p>
+      <p>
+        {t("beforeYouRent.date")}
+      </p>
+      <ul>
+        <li>{t("beforeYouRent.description")}</li>
+      </ul>
+      {/* koniec */}
       <h3>
         <span>{t("frontend developer")}</span>
       </h3>
